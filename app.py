@@ -15,7 +15,7 @@ def root(event_time: str, from_timezone: str, to_timezone: str):
         raise HTTPException(status_code=400, detail="Invalid date/time format. Please use YYYY-MM-DDThh:mm:ss.")
     
 
-    print("target date:", target_date)
+    #DEBUG print("target date:", target_date)
 
     #both from and to timezones should be in the format of UTC[+/-]hh:mm
     from_timezone_match = re.match(r"^UTC([+-])(0\d|1\d|2[0-3]):([0-5]\d)$", from_timezone)
