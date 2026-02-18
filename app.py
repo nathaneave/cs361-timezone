@@ -65,5 +65,5 @@ def root(event_time: str, from_timezone: str, to_timezone: str):
 
     return {"converted_time": converted_time.isoformat(), "hours_difference": hours_difference}
 
-#convert March 2, 2026 at 8:00am from PT to ET
+#convert March 2, 2026 at 8:00am from PT to ET 
 #DEBUG print(root("2025-07-21T08:00:00", "UTC-08:00", "UTC-05:00"))
